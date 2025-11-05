@@ -1,6 +1,14 @@
+@Library("Shared Library") _
 pipeline {
     agent {label 'dhruv'}
     stages {
+        stage('Hello!'){
+           steps{
+               script{
+                   hello()
+               }
+           }
+        }
         stage('Git Clone') {
             steps {
                 echo "Code Cloning"
