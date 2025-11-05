@@ -1,4 +1,4 @@
-@Library("Shared Library") _
+@Library("Shared") _
 pipeline {
     agent {label 'dhruv'}
     stages {
